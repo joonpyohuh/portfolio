@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import { useLang } from "@/lib/i18n";
 
@@ -59,6 +60,14 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+                  {item.href && (
+                    <Link
+                      href={item.href}
+                      className="mt-6 inline-block meta text-ink quiet-link normal-case tracking-normal"
+                    >
+                      {item.linkLabel ?? t.common.viewAwards}
+                    </Link>
+                  )}
                 </FadeUp>
               </li>
             ))}

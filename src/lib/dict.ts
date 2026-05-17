@@ -5,6 +5,7 @@ export type Dict = {
   nav: {
     about: string;
     work: string;
+    awards: string;
     manifesto: string;
     contact: string;
   };
@@ -49,6 +50,8 @@ export type Dict = {
       org: string;
       role: string;
       details: string[];
+      href?: string;
+      linkLabel?: string;
     }[];
   };
 
@@ -91,6 +94,8 @@ export type Dict = {
     backHome: string;
     inProgress: string;
     viewSite: string;
+    viewAwards: string;
+    backExperience: string;
   };
 };
 
@@ -98,6 +103,7 @@ const ko: Dict = {
   nav: {
     about: "About",
     work: "Work",
+    awards: "Awards",
     manifesto: "Manifesto",
     contact: "Contact",
   },
@@ -168,6 +174,17 @@ const ko: Dict = {
           "소학회 시각 아이덴티티 및 디자인 톤 담당",
           "비전공 신입에게 AI 활용 풀스택 빌딩 교육",
         ],
+      },
+      {
+        period: "2025",
+        org: "경영인텔리전스학과 해커톤",
+        role: "1등 (대상) · 팀 참가 · 기획 · 개발",
+        details: [
+          "학과 주최 해커톤에서 팀 프로젝트로 대상 수상",
+          "문제 정의부터 Next.js 프로토타입·발표까지 담당",
+        ],
+        href: "/awards",
+        linkLabel: "수상 경력 보기 →",
       },
       {
         period: "2025",
@@ -252,6 +269,8 @@ const ko: Dict = {
     backHome: "← Back to home",
     inProgress: "Work in progress",
     viewSite: "사이트 보기",
+    viewAwards: "수상 경력 보기",
+    backExperience: "← Experience로 돌아가기",
   },
 };
 
@@ -259,6 +278,7 @@ const en: Dict = {
   nav: {
     about: "About",
     work: "Work",
+    awards: "Awards",
     manifesto: "Manifesto",
     contact: "Contact",
   },
@@ -329,6 +349,17 @@ const en: Dict = {
           "Own the visual identity and design tone of the society",
           "Teach AI-assisted full-stack building to non-CS newcomers",
         ],
+      },
+      {
+        period: "2025",
+        org: "Business Intelligence Dept. Hackathon",
+        role: "1st place (Grand prize) · Team · Planning · Development",
+        details: [
+          "Won grand prize with a team project at the department hackathon",
+          "Owned problem framing through Next.js prototype and final pitch",
+        ],
+        href: "/awards",
+        linkLabel: "View award →",
       },
       {
         period: "2025",
@@ -413,6 +444,8 @@ const en: Dict = {
     backHome: "← Back to home",
     inProgress: "Work in progress",
     viewSite: "View site",
+    viewAwards: "View award",
+    backExperience: "← Back to Experience",
   },
 };
 

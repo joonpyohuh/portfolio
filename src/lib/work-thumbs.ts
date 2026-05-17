@@ -14,8 +14,8 @@ export const workThumbs: Record<
     className: "h-14 w-14 object-contain",
   },
   kmong: {
-    src: "/projects/kmong-likerain.png",
-    alt: "likerain",
-    className: "h-14 w-20 object-cover object-top border border-line",
+    src: "/projects/kmong-logo.png",
+    alt: "크몽",
+    className: "h-14 w-14 object-contain",
   },
 };

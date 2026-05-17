@@ -53,8 +53,7 @@ const ko: IoveContent = {
       "Tee 03 — See-through polo",
     ],
   },
-  closing:
-    "이 페이지는 아직 존재하지 않는 브랜드의 첫 흔적이다. 언제 시작될지는 모른다. 다만 시작될 것이다.",
+  closing: "가상의 브랜드입니다.",
 };
 
 const en: IoveContent = {
@@ -91,8 +90,7 @@ const en: IoveContent = {
       "Tee 03 — See-through polo",
     ],
   },
-  closing:
-    "This page is the first trace of a brand that does not exist yet. When it begins is unknown. That it will begin is not.",
+  closing: "This is a virtual brand.",
 };
 
 export const ioveContent: Record<Lang, IoveContent> = { ko, en };

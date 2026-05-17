@@ -1,7 +1,6 @@
 "use client";
 
 import FadeUp from "@/components/FadeUp";
-import IoveSerialForm from "@/components/IoveSerialForm";
 import { useLang } from "@/lib/i18n";
 import { ioveContent, IOVE_CODENAME } from "@/lib/iove-content";
 
@@ -58,12 +57,6 @@ export default function IovePage() {
           </FadeUp>
 
           <FadeUp delay={0.2}>
-            <section>
-              <IoveSerialForm copy={c.serial} />
-            </section>
-          </FadeUp>
-
-          <FadeUp delay={0.25}>
             <section>
               <h2 className="meta mb-6">{c.collection.title}</h2>
               <ul className="space-y-4">

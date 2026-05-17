@@ -106,6 +106,8 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
     period: "2025",
     role: "Service provider",
     status: "active",
+    logoImage: "/projects/kmong-logo.png",
+    logoAlt: "크몽 로고",
     image: "/projects/kmong-likerain.png",
     imageAlt: "likerain 예시 페이지 — A study in stillness",
     externalUrl: "https://kmong-5qwd.vercel.app/",

@@ -150,7 +150,7 @@ const ko: Dict = {
       },
     ],
     outro:
-      "AI 효율의 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
+      "AI 와 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
   },
   experience: {
     eyebrow: "Experience",
@@ -311,7 +311,7 @@ const en: Dict = {
       },
     ],
     outro:
-      "Once I stood as close to AI efficiency as one can. Now I'm a 24-year-old drawn to the inefficiency and creativity only humans hold — and to fashion, where they gather.",
+      "As close to AI as one can be — now a 24-year-old drawn to the inefficiency and creativity only humans hold, and to fashion, where they gather.",
   },
   experience: {
     eyebrow: "Experience",

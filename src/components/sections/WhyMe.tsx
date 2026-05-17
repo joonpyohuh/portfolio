@@ -2,6 +2,7 @@
 
 import FadeUp from "@/components/FadeUp";
 import SectionHeader from "@/components/SectionHeader";
+import TypewriterLine from "@/components/TypewriterLine";
 import { useLang } from "@/lib/i18n";
 
 export default function WhyMe() {
@@ -30,12 +31,9 @@ export default function WhyMe() {
 
         {t.whyMe.outro && (
           <FadeUp delay={0.4} className="mt-16 md:mt-24">
-            <p
-              className="text-body text-ink/85 max-w-prose"
-              style={{ lineHeight: 1.9 }}
-            >
-              {t.whyMe.outro}
-            </p>
+            <div className="-mx-6 px-6 md:mx-0 md:px-0 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+              <TypewriterLine text={t.whyMe.outro} />
+            </div>
           </FadeUp>
         )}
       </div>

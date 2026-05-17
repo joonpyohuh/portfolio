@@ -9,7 +9,7 @@ export default function IovePage() {
   const c = ioveContent[lang];
 
   return (
-    <article className="section bg-cold/30 min-h-[80vh]">
+    <article className="section min-h-[80vh]">
       <div className="container-page">
         <FadeUp>
           <header className="max-w-prose mb-20 md:mb-28">

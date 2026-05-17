@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         // Design system palette
-        base: "#F5F3EE",          // background (warm off-white)
+        base: "#FFFFFF",          // page background — pure white
         ink: "#1A1A1A",            // text primary
         ink2: "#6B6B6B",           // text secondary
         metal: "#8A8A8A",          // brushed metal accent
         cold: "#FAFAFA",           // cold white accent
-        line: "#D8D4CC",           // border / divider
+        line: "#E8E8E8",           // border / divider
         // Aliases for Tailwind defaults so existing utilities still work
-        background: "#F5F3EE",
+        background: "#FFFFFF",
         foreground: "#1A1A1A",
       },
       fontFamily: {

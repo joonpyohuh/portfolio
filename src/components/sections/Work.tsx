@@ -1,9 +1,11 @@
-"use client";
+﻿"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import SectionHeader from "@/components/SectionHeader";
 import { useLang } from "@/lib/i18n";
+import { workThumbs } from "@/lib/work-thumbs";
 
 function WorkRow({
   item,
@@ -13,12 +15,24 @@ function WorkRow({
   cta: string;
 }) {
   const href = item.href ?? (item.slug ? `/project/${item.slug}` : undefined);
+  const thumb = item.slug ? workThumbs[item.slug] : undefined;
 
   const content = (
     <div className="flex flex-col gap-4 py-10 md:flex-row md:items-start md:justify-between md:gap-12 md:py-12">
-      <div className="flex gap-6 md:gap-10">
-        <span className="meta tabular-nums text-metal shrink-0">{item.index}</span>
-        <div>
+      <div className="flex gap-5 md:gap-8 min-w-0 flex-1">
+        <span className="meta tabular-nums text-metal shrink-0 pt-1">{item.index}</span>
+        {thumb && (
+          <div className="shrink-0">
+            <Image
+              src={thumb.src}
+              alt={thumb.alt}
+              width={80}
+              height={56}
+              className={thumb.className ?? "h-14 w-14 object-contain"}
+            />
+          </div>
+        )}
+        <div className="min-w-0">
           <h3 className="text-h3 text-ink">{item.name}</h3>
           <p className="mt-2 text-body text-ink2">{item.tagline}</p>
           {item.role && (
@@ -26,7 +40,7 @@ function WorkRow({
           )}
         </div>
       </div>
-      <div className="md:text-right md:shrink-0">
+      <div className="md:text-right md:shrink-0 md:pt-1">
         <p className="meta text-ink2">{item.period}</p>
         <p className="mt-2 meta text-metal normal-case tracking-normal">{item.meta}</p>
         {href && (
@@ -75,3 +89,4 @@ export default function Work() {
     </section>
   );
 }
+

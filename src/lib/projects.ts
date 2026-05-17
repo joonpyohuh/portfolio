@@ -34,6 +34,8 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
     period: "2024.11 — 2026.04",
     role: "Founder & CEO",
     status: "ended",
+    logoImage: "/projects/syna-logo.png",
+    logoAlt: "Syna 로고",
     summary:
       "빠르게 변하는 제품 스펙에서 ‘무엇이, 왜 바뀌었는지’를 팀이 공유하지 못하는 문제를 겨냥한 B2B SaaS. Living Spec Layer로 시작해 건축 인허가 검토 AI 에이전트로 피벗했고, 4주 검증 스프린트 이후 종료했습니다.",
     highlights: [

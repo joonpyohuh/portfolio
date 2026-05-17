@@ -10,12 +10,12 @@
 :root {
   --font-pretendard: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
     system-ui, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  --base:  #F5F3EE;   /* warm off-white background */
+  --base:  #FFFFFF;   /* page background — pure white */
   --ink:   #1A1A1A;   /* near black, never pure */
   --ink2:  #6B6B6B;   /* secondary text */
   --metal: #8A8A8A;   /* brushed metal accent */
   --cold:  #FAFAFA;   /* cold white accent */
-  --line:  #D8D4CC;   /* divider beige */
+  --line:  #E8E8E8;   /* divider on white */
 }
 
 /* Hard-locked to a warm light theme. No dark mode toggle. */

@@ -1,34 +1,38 @@
 import type { Lang } from "./dict";
 
 export const IOVE_CODENAME = "IOVE";
+export const IOVE_SITE_URL = "https://iove.vercel.app/";
 
 export type IoveContent = {
   eyebrow: string;
   codename: string;
+  subtitle: string;
   status: string;
+  tagline: string;
   concept: { title: string; body: string[] };
   palette: { hex: string; name: string }[];
-  serial: {
-    prompt: string;
-    placeholder: string;
+  site: {
+    title: string;
+    description: string;
     cta: string;
-    result: (n: number) => string;
-    hint: string;
+    url: string;
   };
   collection: { title: string; items: string[] };
   closing: string;
 };
 
 const ko: IoveContent = {
-  eyebrow: "A future project",
+  eyebrow: "Brand project",
   codename: IOVE_CODENAME,
-  status: "Concept",
+  subtitle: "Atelier of Cold Light",
+  status: "Live prototype",
+  tagline: "the beauty of inefficiency",
   concept: {
     title: "컨셉",
     body: [
-      "Off-white base. Brushed metal accent.",
-      "젠더리스 정핏. 의도된 결핍.",
-      "첫 카테고리는 티셔츠.",
+      "IOVE — 차가운 빛의 아틀리에. Off-white와 brushed metal, 젠더리스 정핏.",
+      "의도된 결핍. 첫 카테고리는 티셔츠.",
+      "매니페스토의 ‘비효율의 아름다움’을 브랜드 언어로 옮긴 프로토타입입니다.",
     ],
   },
   palette: [
@@ -37,13 +41,12 @@ const ko: IoveContent = {
     { hex: "#8A8A8A", name: "Brushed metal" },
     { hex: "#1A1A1A", name: "Deep ink" },
   ],
-  serial: {
-    prompt: "Find out your number",
-    placeholder: "soojeen20000@gmail.com",
-    cta: "확인",
-    result: (n) =>
-      `당신은 ${IOVE_CODENAME}의 ${n}번째 관심자입니다. 각각의 옷에 시리얼이 새겨지듯, 각각의 사람도 다릅니다.`,
-    hint: "이메일은 저장되지 않습니다. 브라우저에만 번호가 기록됩니다.",
+  site: {
+    title: "IOVE 브랜드 사이트",
+    description:
+      "아래 링크는 실제로 제작·배포한 IOVE 브랜드 프로토타입입니다. 포트폴리오와 동일한 결 — 여백, 차가운 톤, 의도된 결핍 — 을 브랜드 경험으로 풀어낸 첫 작품입니다.",
+    cta: "iove.vercel.app 방문",
+    url: IOVE_SITE_URL,
   },
   collection: {
     title: "첫 컬렉션 — 텍스트 스케치",
@@ -57,15 +60,17 @@ const ko: IoveContent = {
 };
 
 const en: IoveContent = {
-  eyebrow: "A future project",
+  eyebrow: "Brand project",
   codename: IOVE_CODENAME,
-  status: "Concept",
+  subtitle: "Atelier of Cold Light",
+  status: "Live prototype",
+  tagline: "the beauty of inefficiency",
   concept: {
     title: "Concept",
     body: [
-      "Off-white base. Brushed metal accent.",
-      "Genderless slim fit. Intended imperfection.",
-      "First category: tees.",
+      "IOVE — an atelier of cold light. Off-white, brushed metal, genderless slim fit.",
+      "Intended imperfection. First category: tees.",
+      "A brand prototype translating the manifesto’s ‘beauty of inefficiency’ into experience.",
     ],
   },
   palette: [
@@ -74,13 +79,12 @@ const en: IoveContent = {
     { hex: "#8A8A8A", name: "Brushed metal" },
     { hex: "#1A1A1A", name: "Deep ink" },
   ],
-  serial: {
-    prompt: "Find out your number",
-    placeholder: "your@email.com",
-    cta: "Reveal",
-    result: (n) =>
-      `You are the ${n}th person drawn to ${IOVE_CODENAME}. Like a serial pressed into cloth, every person is different.`,
-    hint: "Your email is not sent anywhere. The number is stored only in this browser.",
+  site: {
+    title: "IOVE brand site",
+    description:
+      "The link below is the live IOVE brand prototype — the same texture as this portfolio: margin, cold tone, intended imperfection, built as a first brand experience.",
+    cta: "Visit iove.vercel.app",
+    url: IOVE_SITE_URL,
   },
   collection: {
     title: "First collection — text sketch",
@@ -94,17 +98,3 @@ const en: IoveContent = {
 };
 
 export const ioveContent: Record<Lang, IoveContent> = { ko, en };
-
-/** Deterministic serial 1–500 from email string */
-export function serialFromEmail(email: string): number {
-  const normalized = email.trim().toLowerCase();
-  let h = 0;
-  for (let i = 0; i < normalized.length; i++) {
-    h = (Math.imul(31, h) + normalized.charCodeAt(i)) | 0;
-  }
-  return (Math.abs(h) % 500) + 1;
-}
-
-export function formatSerial(n: number): string {
-  return `#${String(n).padStart(3, "0")} / 500`;
-}

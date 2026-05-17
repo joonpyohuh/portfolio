@@ -68,7 +68,7 @@ export default function Work() {
             href="/project/future-brand"
             className="meta text-ink2 hover:text-ink transition-colors duration-300 ease-soft"
           >
-            IOVE — {lang === "ko" ? "가상 브랜드 프로젝트" : "future brand project"} →
+            IOVE — {lang === "ko" ? "브랜드 사이트" : "brand site"} (iove.vercel.app) →
           </Link>
         </FadeUp>
       </div>

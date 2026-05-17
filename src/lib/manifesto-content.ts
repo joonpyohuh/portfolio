@@ -38,8 +38,8 @@ const ko: ManifestoContent = {
       number: "03",
       title: "IOVE",
       body: [
-        "지금 구상 중인 브랜드의 이름은 IOVE입니다. 젠더리스 정핏, off-white와 brushed metal, 첫 카테고리는 티셔츠.",
-        "아직 존재하지 않는 브랜드의 첫 흔적입니다. 이 포트폴리오와 /project/future-brand 페이지가 그 시작점입니다.",
+        "브랜드 이름은 IOVE — Atelier of Cold Light. the beauty of inefficiency.",
+        "실제 브랜드 프로토타입은 iove.vercel.app 에서 확인할 수 있습니다.",
       ],
     },
   ],

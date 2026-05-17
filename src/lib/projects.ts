@@ -13,6 +13,7 @@ export type ProjectDetail = {
   period: string;
   role: string;
   status?: "ended" | "active";
+  statusLabel?: string;
   summary?: string;
   highlights: string[];
   sections?: ProjectSection[];
@@ -84,20 +85,55 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
   "on-eum": {
     slug: "on-eum",
     name: "온이음",
-    tagline: "요양병원을 위한 헬스케어 AI 챗봇, 그리고 그 종료",
-    period: "2024 — 2026",
+    tagline: "요양병원을 위한 헬스케어 AI 챗봇 — 대학병원 PoC 최종 검토까지",
+    period: "2024 — Present",
     role: "Founder",
-    status: "ended",
+    status: "active",
+    statusLabel: "PoC Discussion",
     logoImage: "/projects/on-eum-logo.png",
     logoAlt: "온이음 ONIIUM 로고",
+    summary:
+      "요양병원의 환자/보호자 커뮤니케이션 부담을 줄이기 위한 AI 챗봇 프로젝트. 프로토타입 개발과 도메인 리서치를 거쳐 아주대학교요양병원과 PoC 협의를 진행했고, 현재 내부 PoC 최종 검토 단계에 진입해 있습니다.",
     highlights: [
-      "아주대학교 병원 PoC 협의",
-      "요양병원 도메인 리서치",
-      "AI 챗봇 프로토타입",
-      "2026년 종료 — 다음 단계로의 전환",
+      "헬스케어 도메인 리서치 및 요양병원 운영 구조 파악",
+      "AI 챗봇 프로토타입 개발 (Next.js + OpenAI API)",
+      "아주대학교요양병원 총무팀 팀장 및 기획팀 팀장 미팅",
+      "내부 PoC 최종 검토 단계 진입",
+    ],
+    sections: [
+      {
+        title: "Problem",
+        paragraphs: [
+          "요양병원에 가족을 모신 보호자들은 환자 상태에 대한 정보 비대칭을 겪습니다. 의료진은 매번 같은 질문에 답하느라 본업 시간이 줄어듭니다.",
+          "양쪽 모두 지쳐 있습니다.",
+        ],
+      },
+      {
+        title: "Approach",
+        paragraphs: [
+          "1차 응대를 AI 챗봇이 맡고, 의료진은 진짜로 사람의 판단이 필요한 영역에 집중하게 합니다.",
+          "챗봇은 매니페스토적 의미에서 ‘사람을 대체’하는 게 아니라, ‘사람이 사람일 수 있도록 시간을 만드는’ 도구입니다.",
+        ],
+      },
+      {
+        title: "Process",
+        items: [
+          "2024 — 도메인 리서치 시작",
+          "2024 — 프로토타입 개발 (Next.js, OpenAI API)",
+          "2025 — 아주대학교요양병원 컨택",
+          "2025 — 총무팀 / 기획팀 팀장 미팅",
+          "2025 — 내부 PoC 최종 검토 단계 진입",
+        ],
+      },
+      {
+        title: "Status",
+        paragraphs: [
+          "프로젝트는 현재 진행 중이며, 이 페이지는 시점에 따라 업데이트됩니다.",
+        ],
+      },
     ],
     learning:
-      "온이음 역시 만족스럽게 이어가지 못하고 종료했습니다. PoC까지 닿았지만, 병행하던 다른 일정과 방향성의 변화 속에서 접었습니다. 그 과정에서도 ‘어떤 결의 서비스를 만들 것인가’에 대한 감각은 분명해졌습니다.",
+      "대학병원이라는 보수적 도메인에서, 24살의 학생 창업자가 팀장급 의사결정권자와 어떻게 신뢰를 만드는지에 대한 6개월. 기술 데모보다 더 중요한 건 그들의 언어로 가치를 번역해내는 일이었습니다. PoC 한 번에 도달하기까지 미팅마다 자료를 세 번씩 다시 만들었고, 그게 지금까지의 모든 학습 중 가장 값졌습니다.",
   },
   kmong: {
     slug: "kmong",

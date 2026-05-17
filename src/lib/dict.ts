@@ -35,6 +35,27 @@ export type Dict = {
       body: string;
       meta: string;
     }[];
+    operatorCard: {
+      tag: string;
+      title: string;
+      body: string;
+      meta: string;
+    };
+    outro: string;
+  };
+
+  // Experience timeline
+  experience: {
+    eyebrow: string;
+    period: string;
+    intro: string;
+    items: {
+      period: string;
+      ongoing?: boolean;
+      org: string;
+      role: string;
+      details: string[];
+    }[];
   };
 
   // Selected Work
@@ -116,7 +137,7 @@ const ko: Dict = {
         tag: "01 — Founder",
         title: "두 번의 창업, 그리고 그 안에서 배운 것",
         body:
-          "Syna — 제품 변경 인텔리전스 SaaS, Living Spec Layer, 건축 인허가 AI 피벗 후 종료. 온이음 — 요양병원 AI, PoC 후 2026년 종료.",
+          "Syna (B2B SaaS, 제품 변경 인텔리전스) — 4인 팀 빌딩, 피벗 의사결정, 사업계획서 작성, 모두의창업·두어스 어플라이.\n\n온이음 (헬스케어 AI, 요양병원) — 프로토타입 개발에서 멈추지 않고 아주대학교요양병원 팀장급과 직접 미팅, PoC 최종 검토 단계까지 진입.\n\n두 번 다 만족스럽게 끝나진 않았다. 하지만 사업이 종이 위가 아니라 사람과 사람 사이에서 만들어진다는 걸 두 번 다 배웠다.",
         meta: "2024 — 2026",
       },
       {
@@ -132,6 +153,53 @@ const ko: Dict = {
         body:
           "의도된 결핍의 미학을 추구하는 브랜드 IOVE를 구상 중. 아더에러, 앤더슨벨, 르메르의 결을 좋아하고, 한국 패션 브랜드의 글로벌 성장 케이스에 깊이 관심 있음. 자세한 brand thinking은 매니페스토와 IOVE 페이지에서.",
         meta: "Ongoing",
+      },
+    ],
+    operatorCard: {
+      tag: "04 — Operator",
+      title: "어른과 협상하고, 조직을 운영하고, 사람을 가르치는 사람",
+      body:
+        "B-CUBE 운영진 — Vibe coding 스터디 직접 운영 및 강의, 소학회 디자인 톤 리딩. ASAP 운영진 — 웹사이트 기획·개발 총괄, 신규 멤버 온보딩. 요양병원 팀장급, 상인회 회장과 직접 미팅. 24살이 일찍 만난 어른의 의사결정 테이블, 그리고 그 안에서 작동하는 신뢰의 메커니즘.",
+      meta: "2024 — 현재",
+    },
+    outro:
+      "AI 효율의 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
+  },
+  experience: {
+    eyebrow: "Experience",
+    period: "2024 — 2026",
+    intro:
+      "창업과 빌딩만 한 건 아니다. 동아리와 소학회에서 사람을 모으고, 가르치고, 운영했다.",
+    items: [
+      {
+        period: "2026.03 — Present",
+        ongoing: true,
+        org: "B-CUBE",
+        role: "아주대학교 경영인텔리전스학과 소학회 / 운영진, 스터디 리더, 디자인 톤 리더",
+        details: [
+          "Vibe coding 스터디 직접 운영 및 강의",
+          "소학회 시각 아이덴티티 및 디자인 톤 담당",
+          "비전공 신입에게 AI 활용 풀스택 빌딩 교육",
+        ],
+      },
+      {
+        period: "2025",
+        org: "ASAP",
+        role: "IT 기획 동아리 / 운영진",
+        details: [
+          "웹사이트 기획 및 개발 전반 진행",
+          "신규 멤버 온보딩 및 프로젝트 매니징",
+        ],
+      },
+      {
+        period: "2025",
+        org: "AD-BRAIN",
+        role: "마케팅 동아리 / 멤버",
+        details: [
+          "지역 상권 살리기 프로젝트 참여",
+          "상인회 회장과 직접 미팅 및 마케팅 제안",
+          "오프라인 현장 기반 마케팅 실행 경험",
+        ],
       },
     ],
   },
@@ -152,10 +220,10 @@ const ko: Dict = {
         slug: "on-eum",
         index: "02",
         name: "온이음",
-        tagline: "요양병원을 위한 헬스케어 AI 챗봇, 그리고 그 종료",
-        period: "2024 — 2026",
+        tagline: "요양병원을 위한 헬스케어 AI 챗봇 — 대학병원 PoC 최종 검토까지",
+        period: "2024 — Present",
         role: "Founder",
-        meta: "Healthcare AI · PoC · 종료",
+        meta: "Healthcare AI · PoC Discussion",
       },
       {
         slug: "kmong",
@@ -237,7 +305,7 @@ const en: Dict = {
         tag: "01 — Founder",
         title: "Two startups, and what I took from them",
         body:
-          "Syna — B2B SaaS: 4-person team, pivot, sunset. On-eum — healthcare AI for nursing hospitals: PoC with Ajou University Hospital, ended in 2026.",
+          "Syna (B2B SaaS, product-change intelligence) — built a team of four, drove the pivot, wrote the deck, applied to MoDuEui-changup and Doors.\n\nOn-eum (healthcare AI for nursing hospitals) — went past the prototype, met department heads at Ajou University Hospital, reached the final stage of internal PoC review.\n\nNeither ended the way I wanted. But I learned, twice, that a business is built between people, not on paper.",
         meta: "2024 — 2026",
       },
       {
@@ -253,6 +321,53 @@ const en: Dict = {
         body:
           "Designing IOVE — a brand around intended imperfection. Drawn to ader error, Andersson Bell, and Lemaire, and to Korean fashion going global. The deeper thinking lives in the manifesto and the IOVE page.",
         meta: "Ongoing",
+      },
+    ],
+    operatorCard: {
+      tag: "04 — Operator",
+      title: "Negotiating with adults, running orgs, teaching people",
+      body:
+        "B-CUBE — running and lecturing the Vibe coding study, leading the design tone of the society. ASAP — owning website planning/dev and onboarding new members. Direct meetings with hospital department heads and a merchants' association president. The kind of decision tables a 24-year-old usually doesn't sit at — and the trust that gets built around them.",
+      meta: "2024 — present",
+    },
+    outro:
+      "Once I stood as close to AI efficiency as one can. Now I'm a 24-year-old drawn to the inefficiency and creativity only humans hold — and to fashion, where they gather.",
+  },
+  experience: {
+    eyebrow: "Experience",
+    period: "2024 — 2026",
+    intro:
+      "It wasn't only founding and building. I gathered, taught, and ran clubs and study societies on campus.",
+    items: [
+      {
+        period: "2026.03 — Present",
+        ongoing: true,
+        org: "B-CUBE",
+        role: "Business Intelligence Society, Ajou Univ. / Operator, Study Lead, Design Tone Lead",
+        details: [
+          "Run and lecture the Vibe coding study",
+          "Own the visual identity and design tone of the society",
+          "Teach AI-assisted full-stack building to non-CS newcomers",
+        ],
+      },
+      {
+        period: "2025",
+        org: "ASAP",
+        role: "IT planning club / Operator",
+        details: [
+          "Owned website planning and end-to-end development",
+          "Onboarded new members, managed projects",
+        ],
+      },
+      {
+        period: "2025",
+        org: "AD-BRAIN",
+        role: "Marketing club / Member",
+        details: [
+          "Joined a local-economy revitalization project",
+          "Met directly with the merchants' association president, proposed marketing",
+          "Hands-on offline, on-site marketing execution",
+        ],
       },
     ],
   },
@@ -273,10 +388,10 @@ const en: Dict = {
         slug: "on-eum",
         index: "02",
         name: "On-eum",
-        tagline: "A healthcare AI chatbot for nursing hospitals, and how it ended",
-        period: "2024 — 2026",
+        tagline: "Healthcare AI for nursing hospitals — into final PoC review with a university hospital",
+        period: "2024 — Present",
         role: "Founder",
-        meta: "Healthcare AI · PoC · ended",
+        meta: "Healthcare AI · PoC Discussion",
       },
       {
         slug: "kmong",

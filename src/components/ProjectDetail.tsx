@@ -29,10 +29,16 @@ export default function ProjectDetailView({ project }: { project: Project }) {
               <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-3 mb-6">
                     <p className="meta text-metal">{project.period}</p>
-                    {project.status === "ended" && (
+                    {project.statusLabel ? (
                       <span className="meta text-ink2 border border-line px-2 py-0.5">
-                        {endedLabel}
+                        {project.statusLabel}
                       </span>
+                    ) : (
+                      project.status === "ended" && (
+                        <span className="meta text-ink2 border border-line px-2 py-0.5">
+                          {endedLabel}
+                        </span>
+                      )
                     )}
                   </div>
                   <h1 className="text-h1-m md:text-h2-d text-ink">{project.name}</h1>

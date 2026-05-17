@@ -4,26 +4,15 @@ import FadeUp from "@/components/FadeUp";
 import SectionHeader from "@/components/SectionHeader";
 import { useLang } from "@/lib/i18n";
 
-const SHOW_OPERATOR_CARD =
-  process.env.NEXT_PUBLIC_WHY_ME_OPERATOR === "true";
-
 export default function WhyMe() {
   const { t } = useLang();
-
-  const cards = SHOW_OPERATOR_CARD
-    ? [...t.whyMe.cards, t.whyMe.operatorCard]
-    : t.whyMe.cards;
-
-  const gridCols = SHOW_OPERATOR_CARD
-    ? "md:grid-cols-2"
-    : "md:grid-cols-3";
 
   return (
     <section id="why-me" className="section border-t border-line">
       <div className="container-page">
         <SectionHeader eyebrow={t.whyMe.eyebrow} title={t.whyMe.title} index="02" />
-        <div className={`grid gap-6 ${gridCols} md:gap-8`}>
-          {cards.map((card, i) => (
+        <div className="grid gap-6 md:grid-cols-3 md:gap-8">
+          {t.whyMe.cards.map((card, i) => (
             <FadeUp key={card.tag} delay={i * 0.1}>
               <article className="group flex h-full flex-col border border-line p-8 transition-colors duration-300 ease-soft hover:border-ink/30">
                 <p className="meta mb-6">{card.tag}</p>

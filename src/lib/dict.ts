@@ -35,12 +35,6 @@ export type Dict = {
       body: string;
       meta: string;
     }[];
-    operatorCard: {
-      tag: string;
-      title: string;
-      body: string;
-      meta: string;
-    };
     outro: string;
   };
 
@@ -155,13 +149,6 @@ const ko: Dict = {
         meta: "Ongoing",
       },
     ],
-    operatorCard: {
-      tag: "04 — Operator",
-      title: "어른과 협상하고, 조직을 운영하고, 사람을 가르치는 사람",
-      body:
-        "B-CUBE 운영진 — Vibe coding 스터디 직접 운영 및 강의, 소학회 디자인 톤 리딩. ASAP 운영진 — 웹사이트 기획·개발 총괄, 신규 멤버 온보딩. 요양병원 팀장급, 상인회 회장과 직접 미팅. 24살이 일찍 만난 어른의 의사결정 테이블, 그리고 그 안에서 작동하는 신뢰의 메커니즘.",
-      meta: "2024 — 현재",
-    },
     outro:
       "AI 효율의 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
   },
@@ -323,13 +310,6 @@ const en: Dict = {
         meta: "Ongoing",
       },
     ],
-    operatorCard: {
-      tag: "04 — Operator",
-      title: "Negotiating with adults, running orgs, teaching people",
-      body:
-        "B-CUBE — running and lecturing the Vibe coding study, leading the design tone of the society. ASAP — owning website planning/dev and onboarding new members. Direct meetings with hospital department heads and a merchants' association president. The kind of decision tables a 24-year-old usually doesn't sit at — and the trust that gets built around them.",
-      meta: "2024 — present",
-    },
     outro:
       "Once I stood as close to AI efficiency as one can. Now I'm a 24-year-old drawn to the inefficiency and creativity only humans hold — and to fashion, where they gather.",
   },

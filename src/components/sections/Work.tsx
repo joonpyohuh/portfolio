@@ -67,7 +67,7 @@ export default function Work() {
   return (
     <section id="work" className="section border-t border-line">
       <div className="container-page">
-        <SectionHeader eyebrow={t.work.eyebrow} title={t.work.title} index="03" />
+        <SectionHeader eyebrow={t.work.eyebrow} title={t.work.title} index="05" />
         <ul className="divide-y divide-line border-y border-line">
           {t.work.items.map((item, i) => (
             <li key={item.index}>

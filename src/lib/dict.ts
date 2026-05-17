@@ -6,6 +6,7 @@ export type Dict = {
     about: string;
     work: string;
     awards: string;
+    certifications: string;
     manifesto: string;
     contact: string;
   };
@@ -52,6 +53,18 @@ export type Dict = {
       details: string[];
       href?: string;
       linkLabel?: string;
+    }[];
+  };
+
+  // Certifications
+  certifications: {
+    eyebrow: string;
+    title: string;
+    items: {
+      name: string;
+      level: string;
+      issuer: string;
+      note: string;
     }[];
   };
 
@@ -104,6 +117,7 @@ const ko: Dict = {
     about: "About",
     work: "Work",
     awards: "Awards",
+    certifications: "Certs",
     manifesto: "Manifesto",
     contact: "Contact",
   },
@@ -126,6 +140,7 @@ const ko: Dict = {
       { label: "Age / Sex", value: "24 / Male" },
       { label: "Based in",  value: "Seoul, South Korea" },
       { label: "Studying",  value: "Business Intelligence, Ajou Univ. (3rd grade)" },
+      { label: "Certification", value: "OPIC IH" },
       { label: "Currently", value: "포트폴리오 사이트 + IOVE 브랜드 prototype" },
     ],
   },
@@ -207,6 +222,18 @@ const ko: Dict = {
       },
     ],
   },
+  certifications: {
+    eyebrow: "Certifications",
+    title: "자격증",
+    items: [
+      {
+        name: "OPIC",
+        level: "IH (Intermediate High)",
+        issuer: "ACTFL · Oral Proficiency Interview-computerized",
+        note: "영어 말하기 능력 평가. IH 등급은 일상·업무 맥락에서 실용적 의사소통이 가능한 수준입니다.",
+      },
+    ],
+  },
   work: {
     eyebrow: "Selected work",
     title: "지금까지 만든 것들",
@@ -279,6 +306,7 @@ const en: Dict = {
     about: "About",
     work: "Work",
     awards: "Awards",
+    certifications: "Certs",
     manifesto: "Manifesto",
     contact: "Contact",
   },
@@ -301,6 +329,7 @@ const en: Dict = {
       { label: "Age / Sex", value: "24 / Male" },
       { label: "Based in",  value: "Seoul, South Korea" },
       { label: "Studying",  value: "Business Intelligence, Ajou Univ. (Junior)" },
+      { label: "Certification", value: "OPIC IH" },
       { label: "Currently", value: "This portfolio + IOVE brand prototype" },
     ],
   },
@@ -379,6 +408,18 @@ const en: Dict = {
           "Met directly with the merchants' association president, proposed marketing",
           "Hands-on offline, on-site marketing execution",
         ],
+      },
+    ],
+  },
+  certifications: {
+    eyebrow: "Certifications",
+    title: "Certifications",
+    items: [
+      {
+        name: "OPIC",
+        level: "IH (Intermediate High)",
+        issuer: "ACTFL · Oral Proficiency Interview-computerized",
+        note: "English oral proficiency assessment. IH indicates practical communication in everyday and professional contexts.",
       },
     ],
   },

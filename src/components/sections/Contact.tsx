@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section border-t border-line">
       <div className="container-page">
-        <SectionHeader eyebrow={t.contact.eyebrow} title={t.contact.title} index="04" />
+        <SectionHeader eyebrow={t.contact.eyebrow} title={t.contact.title} index="06" />
         <div className="container-prose-wide">
           <FadeUp>
             <p className="text-body text-ink2 mb-14 max-w-prose">{t.contact.intro}</p>

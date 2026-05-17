@@ -22,7 +22,8 @@ export default function Header() {
         <nav className="flex items-center gap-6 md:gap-9">
           <Link href="/#about"      className="hidden md:inline text-meta uppercase tracking-[0.1em] text-ink2 hover:text-ink transition-colors duration-300 ease-soft">{t.nav.about}</Link>
           <Link href="/#work"       className="hidden md:inline text-meta uppercase tracking-[0.1em] text-ink2 hover:text-ink transition-colors duration-300 ease-soft">{t.nav.work}</Link>
-          <Link href="/awards"      className="hidden md:inline text-meta uppercase tracking-[0.1em] text-ink2 hover:text-ink transition-colors duration-300 ease-soft">{t.nav.awards}</Link>
+          <Link href="/awards"           className="hidden md:inline text-meta uppercase tracking-[0.1em] text-ink2 hover:text-ink transition-colors duration-300 ease-soft">{t.nav.awards}</Link>
+          <Link href="/#certifications" className="hidden md:inline text-meta uppercase tracking-[0.1em] text-ink2 hover:text-ink transition-colors duration-300 ease-soft">{t.nav.certifications}</Link>
           {/* Intentional flaw: this single nav item carries a slightly looser letter-spacing.
               Almost no one will notice — that's the point. */}
           <Link

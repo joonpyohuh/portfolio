@@ -17,6 +17,13 @@ export type Dict = {
     headline: string[];   // multi-line statement
     sub: string[];        // sub-statement lines
     scroll: string;
+    iove: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      body: string;
+      cta: string;
+    };
   };
 
   // About — "Why I'm here"
@@ -143,6 +150,13 @@ const ko: Dict = {
       "글과 코드를 같이 다루고, 두 번의 창업에서 사업이 어떻게 만들어지는지 봤습니다.",
     ],
     scroll: "스크롤",
+    iove: {
+      eyebrow: "Brand project",
+      title: "IOVE",
+      subtitle: "Atelier of Cold Light",
+      body: "차가운 빛의 아틀리에. 매니페스토의 ‘비효율의 아름다움’을 브랜드로 옮긴, 가상이지만 진지한 프로토타입.",
+      cta: "IOVE 보기 →",
+    },
   },
   about: {
     eyebrow: "Why I'm here",
@@ -383,6 +397,13 @@ const en: Dict = {
       "I work in both words and code, and I've seen — through two startups — how a business actually gets built.",
     ],
     scroll: "Scroll",
+    iove: {
+      eyebrow: "Brand project",
+      title: "IOVE",
+      subtitle: "Atelier of Cold Light",
+      body: "An atelier of cold light — a serious prototype for a fictional brand, carrying the manifesto's beauty of inefficiency into brand language.",
+      cta: "View IOVE →",
+    },
   },
   about: {
     eyebrow: "Why I'm here",

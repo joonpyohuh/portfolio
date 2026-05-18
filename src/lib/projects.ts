@@ -100,7 +100,7 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
     logoImage: "/projects/on-eum-logo.png",
     logoAlt: "온이음 ONIIUM 로고",
     summary:
-      "요양병원 AI 챗봇. 데모보다 먼저 한 일은 ‘이 병원이 왜 이 서비스를 들어야 하는가’를 그들의 언어로 쓰는 것이었습니다. 아주대학교요양병원 팀장급과 직접 미팅했고, 내부 PoC 최종 검토 단계까지 왔습니다.",
+      "요양병원 AI 챗봇. 데모보다 먼저 한 일은 ‘병원이 왜 우리 서비스를 사용해야 하는가’를 그들의 언어로 설명하는 것이었습니다. 아주대학교요양병원 팀장급과 직접 미팅했고, 내부 PoC 최종 검토 단계까지 왔습니다.",
     highlights: [
       "보수적 B2B — 팀장급 의사결정권자 대상 스토리·제안서 작성",
       "미팅마다 제안 자료를 다시 쓰며 메시지 정교화",
@@ -148,12 +148,12 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
       },
     ],
     learning:
-      "대학병원 앞에서 배운 건, 브랜드 마케팅의 B2B면과 가장 가깝다는 것이었습니다. 기술 데모는 뒤에 두고, ‘왜 이 기관이 이 말을 해야 하는가’를 먼저 쓰는 일. PoC까지 오기 위해 제안서를 여러 번 다시 만들었고, 그 과정이 지금 패션 브랜드 마케팅을 지망하는 이유와 직결됩니다.",
+      "대학병원 앞에서 배운 건, 브랜드 마케팅의 B2B면과 가장 가깝다는 것이었습니다. 기술 데모는 뒤에 두고, ‘병원이 왜 우리 서비스를 사용해야 하는가’를 먼저 설명하는 일. PoC까지 오기 위해 제안서를 여러 번 다시 만들었고, 그 과정이 지금 패션 브랜드 마케팅을 지망하는 이유와 직결됩니다.",
   },
   kmong: {
     slug: "kmong",
     name: "크몽 웹사이트 제작 서비스",
-    tagline: "공식 입점 + 예시 페이지 (likerain)",
+    tagline: "공식 입점 + B2C 거래 + likerain 예시 페이지",
     period: "2025",
     role: "Service provider",
     status: "active",
@@ -163,11 +163,14 @@ export const projects: Record<ProjectSlug, ProjectDetail> = {
     imageAlt: "likerain 예시 페이지 — A study in stillness",
     externalUrl: "https://kmong-5qwd.vercel.app/",
     externalLabel: "kmong-5qwd.vercel.app",
+    summary:
+      "크몽 공식 입점 웹사이트 제작 서비스. B2B형 제안·패키징 경험과 함께, 크몽 플랫폼을 통한 B2C — 개인 고객에게 직접 소통하고 거래하는 경험도 했습니다.",
     highlights: [
       "크몽 공식 입점 심사 통과",
+      "B2C — 개인·소규모 클라이언트 대상 제안·소통·거래",
       "예시 페이지 likerain 직접 제작 (Next.js)",
       "향 브랜드 랜딩 — 정적이고 여백 중심의 UI",
-      "거래 진행 중",
+      "서비스 패키징 · 가격 책정 · 타겟 제안 사이클",
     ],
   },
 };

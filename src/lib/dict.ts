@@ -299,17 +299,17 @@ const ko: Dict = {
         role: "Founder",
         meta: "B2B storytelling · PoC Discussion",
         takeaway:
-          "요양병원 팀장 앞에서는 기능 목록이 아니라 ‘이 병원이 왜 이 말을 해야 하는가’로 설득했습니다. 미팅마다 제안서·데크를 다시 쓰며 메시지를 다듬었고, 패션 브랜드가 편집샵·백화점·글로벌 바이어에게 결을 전달하는 B2B 브랜드 마케팅과 같은 구조라고 느꼈습니다.",
+          "요양병원 팀장 앞에서는 기능 목록이 아니라 ‘병원이 왜 우리 서비스를 사용해야 하는가’를 그들의 언어로 설명했습니다. 미팅마다 제안서·데크를 다시 쓰며 메시지를 다듬었고, 패션 브랜드가 편집샵·백화점·글로벌 바이어에게 결을 전달하는 B2B 브랜드 마케팅과 같은 구조라고 느꼈습니다.",
       },
       {
         slug: "kmong",
         index: "03",
         name: "크몽 웹사이트 제작 서비스",
-        tagline: "공식 입점 + likerain 예시 페이지",
+        tagline: "공식 입점 + B2C 거래 + likerain 예시 페이지",
         period: "2025",
-        meta: "Service · kmong-5qwd.vercel.app",
+        meta: "B2C · Service · kmong-5qwd.vercel.app",
         takeaway:
-          "서비스를 패키징하고 가격을 정하고 타겟에게 제안하는 일련의 사이클을 직접 굴려본 경험.",
+          "서비스를 패키징하고 가격을 정하고 타겟에게 제안하는 사이클을 직접 굴려봤습니다. 크몽 웹사이트 제작 서비스를 통해 B2C — 개인 고객에게 직접 소통하고 거래하는 경험도 해봤습니다.",
       },
       {
         index: "04",
@@ -539,17 +539,17 @@ const en: Dict = {
         role: "Founder",
         meta: "B2B storytelling · PoC Discussion",
         takeaway:
-          "Across from hospital department heads, persuasion wasn't a feature list — it was ‘why this institution should speak in this voice.’ I rewrote proposals and decks after every meeting. The same structure, I think, as a fashion brand reaching concept stores, department buyers, and global accounts.",
+          "Across from hospital department heads, persuasion wasn't a feature list — it was explaining, in their language, why the hospital should use our service. I rewrote proposals and decks after every meeting. The same structure, I think, as a fashion brand reaching concept stores, department buyers, and global accounts.",
       },
       {
         slug: "kmong",
         index: "03",
         name: "Kmong website service",
-        tagline: "Official listing + likerain example site",
+        tagline: "Official listing + B2C sales + likerain example site",
         period: "2025",
-        meta: "Service · kmong-5qwd.vercel.app",
+        meta: "B2C · Service · kmong-5qwd.vercel.app",
         takeaway:
-          "Packaging a service, pricing it, pitching it to the right audience — running that full cycle, by myself.",
+          "Packaging a service, pricing it, pitching it to the right audience — running that full cycle, by myself. Through the Kmong website service, I also got B2C experience — talking and transacting directly with individual clients.",
       },
       {
         index: "04",

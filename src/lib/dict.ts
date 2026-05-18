@@ -125,23 +125,24 @@ const ko: Dict = {
     eyebrow: "Portfolio 2026 / Draft 01",
     name: "Junpyo Heo",
     nameKo: "허준표",
-    role: "Founder · Builder · Brand thinker",
+    role: "Brand · Marketing · Builder",
     intro:
-      "AI 시대에, 사람만이 의도할 수 있는 결을 만드는 일에 관심이 있습니다. 이 사이트는 그 첫 번째 prototype입니다.",
+      "브랜드의 메시지가 어디서, 누구에게, 어떻게 닿는지를 설계하는 일에 가장 가까이 있고 싶습니다. 창업·운영·빌딩의 모든 결정이 결국 한 줄의 카피로 모인다는 걸 경험으로 배웠습니다.",
   },
   about: {
     eyebrow: "About",
     body: [
-      "창업을 경험해 봤고, 또 운영해봤습니다.",
-      "그 과정에서 배운 건 사업 메커니즘이 아니라, 내가 어떤 결의 브랜드를 만들고 싶은지에 대한 명확한 그림이었습니다.",
-      "지금은 그 그림을 현실로 만들기 위한 다음 단계를 준비하고 있습니다.",
+      "창업과 운영을 경험했고, 그 과정에서 가장 많이 한 일은 의사결정권자 앞에서 가치를 한 줄로 정리해 전달하는 일이었습니다.",
+      "지금은 그 훈련을 브랜드와 마케팅 — 메시지를 어디서, 누구에게, 어떻게 닿게 할지 설계하는 일 안에서 풀고 싶습니다.",
+      "한국 패션 브랜드의 글로벌 성장 케이스에 깊이 관심이 있으며, 인하우스 마케팅 인턴 자리를 찾고 있습니다.",
     ],
     meta: [
       { label: "Age / Sex", value: "24 / Male" },
       { label: "Based in",  value: "Seoul, South Korea" },
       { label: "Studying",  value: "Business Intelligence, Ajou Univ. (3rd grade)" },
       { label: "Certifications", value: "OPIC IH · ITQ 한글 파워포인트 B" },
-      { label: "Currently", value: "포트폴리오 사이트 + IOVE 브랜드 prototype" },
+      { label: "Looking for", value: "패션 브랜드 인하우스 마케팅 인턴" },
+      { label: "Currently",   value: "IOVE 브랜드 prototype · 본 포트폴리오 사이트" },
     ],
   },
   whyMe: {
@@ -149,24 +150,24 @@ const ko: Dict = {
     title: "세 가지 결",
     cards: [
       {
-        tag: "01 — Founder",
-        title: "두 번의 창업, 그리고 그 안에서 배운 것",
+        tag: "01 — Founder · Communicator",
+        title: "‘가치를 한 줄로 전달하는 일’을 두 번 했다",
         body:
-          "Syna (B2B SaaS, 제품 변경 인텔리전스) — 4인 팀 빌딩, 피벗 의사결정, 사업계획서 작성, 모두의창업·두어스 어플라이.\n\n온이음 (헬스케어 AI, 요양병원) — 프로토타입 개발에서 멈추지 않고 아주대학교요양병원 팀장급과 직접 미팅, PoC 최종 검토 단계까지 진입.\n\n두 번 다 만족스럽게 끝나진 않았다. 하지만 사업이 종이 위가 아니라 사람과 사람 사이에서 만들어진다는 걸 두 번 다 배웠다.",
+          "Syna (B2B SaaS, 제품 변경 인텔리전스) — 4인 팀 빌딩, 피벗 의사결정, 사업계획서·피치덱, 모두의창업·두어스 어플라이.\n\n온이음 (헬스케어 AI, 요양병원) — 프로토타입에서 멈추지 않고 아주대학교요양병원 팀장급과 직접 미팅, PoC 최종 검토 단계까지 진입.\n\n결국 두 번 다 ‘메시지를 한 줄로 정리해 의사결정권자에게 닿게 하는 일’이었다. 마케팅의 출발선이라고 생각한다.",
         meta: "2024 — 2026",
       },
       {
-        tag: "02 — Builder",
-        title: "AI와 풀스택으로 빠르게 만드는 사람",
+        tag: "02 — Builder for marketing",
+        title: "마케터가 필요로 하는 페이지를 직접 만든다",
         body:
-          "Next.js / TypeScript / OpenAI API 풀스택 개발. Cursor + Claude Code 기반의 AI-assisted 개발. 크몽 공식 입점 (웹사이트 제작 서비스 심사 통과 + 예시 페이지). 다수 프로젝트 직접 빌드.",
+          "Next.js / TypeScript / OpenAI API 풀스택. 브랜드 랜딩, 캠페인 페이지, 발표 덱, 시리얼 시스템 — 마케팅 자산을 직접 빌드합니다. 크몽 공식 입점(웹사이트 제작 서비스 심사 통과). 마케터의 머릿속에 있는 것을 실제 페이지로 옮기는 일에 강합니다.",
         meta: "2023 — 현재",
       },
       {
         tag: "03 — Brand thinker",
-        title: "결을 글로, 그리고 시각으로 만드는 사람",
+        title: "결을 글로, 그리고 시각으로 잡는 사람",
         body:
-          "의도된 결핍의 미학을 추구하는 브랜드 IOVE를 구상 중. 아더에러, 앤더슨벨, 르메르의 결을 좋아하고, 한국 패션 브랜드의 글로벌 성장 케이스에 깊이 관심 있음. 자세한 brand thinking은 매니페스토와 IOVE 페이지에서.",
+          "의도된 결핍의 미학을 다룬 브랜드 IOVE를 구상 — 카피·시각·시리얼 시스템까지 결을 일관되게 잡는 작업. 아더에러, 앤더슨벨, 르메르의 톤을 좋아하고, 한국 패션의 글로벌 마케팅 케이스에 깊이 관심 있습니다. 자세한 brand thinking은 매니페스토와 IOVE 페이지에.",
         meta: "Ongoing",
       },
     ],
@@ -284,7 +285,7 @@ const ko: Dict = {
     eyebrow: "Contact",
     title: "Want to talk?",
     intro:
-      "브랜드, 인턴, 혹은 그냥 결이 맞는 사람과의 대화. 무엇이든 환영입니다.",
+      "패션 브랜드 인하우스 마케팅 인턴, 브랜드 협업, 혹은 결이 맞는 사람과의 대화. 무엇이든 환영입니다.",
     items: [
       { label: "Email",     value: "soojeen20000@gmail.com",                       href: "mailto:soojeen20000@gmail.com" },
       { label: "Instagram", value: "@treelife0405",                                  href: "https://instagram.com/treelife0405" },
@@ -320,23 +321,24 @@ const en: Dict = {
     eyebrow: "Portfolio 2026 / Draft 01",
     name: "Junpyo Heo",
     nameKo: "허준표",
-    role: "Founder · Builder · Brand thinker",
+    role: "Brand · Marketing · Builder",
     intro:
-      "In an age of AI, I'm interested in the texture only people can intend. This site is the first prototype of that pursuit.",
+      "I want to be closest to brand and marketing — designing where, to whom, and how a message lands. Founding, running, and the pages I built solo all converge into one line of copy.",
   },
   about: {
     eyebrow: "About",
     body: [
-      "I've experienced founding a startup, and I've run operations too.",
-      "What I took from them wasn't the mechanics of business — it was a clearer picture of what kind of brand I want to build.",
-      "I'm now preparing the next step toward making that picture real.",
+      "I founded and ran startups, where the most repeated work was compressing value into one line — for hospital directors, merchants' presidents, faculty judges.",
+      "I want to take that training into brand and marketing — designing where, to whom, and how a message with texture lands.",
+      "I'm focused on Korean fashion brands going global, and I'm looking for an in-house marketing internship.",
     ],
     meta: [
       { label: "Age / Sex", value: "24 / Male" },
       { label: "Based in",  value: "Seoul, South Korea" },
       { label: "Studying",  value: "Business Intelligence, Ajou Univ. (Junior)" },
       { label: "Certifications", value: "OPIC IH · ITQ PowerPoint B" },
-      { label: "Currently", value: "This portfolio + IOVE brand prototype" },
+      { label: "Looking for",    value: "In-house marketing intern at a fashion brand" },
+      { label: "Currently",      value: "IOVE brand prototype · this portfolio site" },
     ],
   },
   whyMe: {
@@ -344,24 +346,24 @@ const en: Dict = {
     title: "Three textures",
     cards: [
       {
-        tag: "01 — Founder",
-        title: "Two startups, and what I took from them",
+        tag: "01 — Founder · Communicator",
+        title: "I did the ‘deliver value in one line’ work — twice",
         body:
-          "Syna (B2B SaaS, product-change intelligence) — built a team of four, drove the pivot, wrote the deck, applied to MoDuEui-changup and Doors.\n\nOn-eum (healthcare AI for nursing hospitals) — went past the prototype, met department heads at Ajou University Hospital, reached the final stage of internal PoC review.\n\nNeither ended the way I wanted. But I learned, twice, that a business is built between people, not on paper.",
+          "Syna (B2B SaaS, product-change intelligence) — built a team of four, drove the pivot, wrote the deck, applied to MoDuEui-changup and Doors.\n\nOn-eum (healthcare AI for nursing hospitals) — went past the prototype, met department heads at Ajou University Hospital, reached the final stage of internal PoC review.\n\nIn the end, both projects were the same kind of work: compressing value into one line that reaches a decision-maker. I think of that as the starting line of marketing.",
         meta: "2024 — 2026",
       },
       {
-        tag: "02 — Builder",
-        title: "Shipping fast with AI and full-stack",
+        tag: "02 — Builder for marketing",
+        title: "Pages marketers actually need — built by me",
         body:
-          "Next.js / TypeScript / OpenAI API full-stack. AI-assisted development with Cursor + Claude Code. Officially listed as a website-building service on Kmong. Many projects shipped solo.",
+          "Next.js / TypeScript / OpenAI API full-stack. Brand landings, campaign pages, decks, serial systems — marketing assets shipped solo. Officially listed on Kmong as a website-building service. I'm strong at moving what's in a marketer's head into a real page.",
         meta: "2023 — present",
       },
       {
         tag: "03 — Brand thinker",
-        title: "Translating texture into language and image",
+        title: "Holding texture together in copy and image",
         body:
-          "Designing IOVE — a brand around intended imperfection. Drawn to ader error, Andersson Bell, and Lemaire, and to Korean fashion going global. The deeper thinking lives in the manifesto and the IOVE page.",
+          "Designing IOVE — a brand around intended imperfection, where copy, visuals, and the serial system carry one texture together. Drawn to ader error, Andersson Bell, and Lemaire — and to Korean fashion's global marketing case studies. The deeper thinking lives in the manifesto and the IOVE page.",
         meta: "Ongoing",
       },
     ],
@@ -479,7 +481,7 @@ const en: Dict = {
     eyebrow: "Contact",
     title: "Want to talk?",
     intro:
-      "About a brand, an internship, or simply finding the same texture in conversation. Anything is welcome.",
+      "About an in-house marketing internship at a fashion brand, a brand collaboration, or simply finding the same texture in conversation. Anything is welcome.",
     items: [
       { label: "Email",     value: "soojeen20000@gmail.com",                       href: "mailto:soojeen20000@gmail.com" },
       { label: "Instagram", value: "@treelife0405",                                  href: "https://instagram.com/treelife0405" },

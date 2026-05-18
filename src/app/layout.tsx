@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     template: "%s — Junpyo Heo",
   },
   description:
-    "AI 시대에 아날로그 가치를 만드는 사람. Founder, builder, brand thinker.",
+    "브랜드와 마케팅 — 한국 패션의 글로벌 성장에 결을 더하는 일. Brand · Marketing · Builder.",
   openGraph: {
     title: "Junpyo Heo — Portfolio 2026",
     description:
-      "AI 시대에 아날로그 가치를 만드는 사람. Founder, builder, brand thinker.",
+      "브랜드와 마케팅 — 한국 패션의 글로벌 성장에 결을 더하는 일. Brand · Marketing · Builder.",
     type: "website",
     locale: "ko_KR",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Junpyo Heo — Portfolio 2026",
     description:
-      "AI 시대에 아날로그 가치를 만드는 사람. Founder, builder, brand thinker.",
+      "브랜드와 마케팅 — 한국 패션의 글로벌 성장에 결을 더하는 일. Brand · Marketing · Builder.",
   },
 };
 

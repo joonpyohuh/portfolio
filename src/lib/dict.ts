@@ -132,7 +132,7 @@ const ko: Dict = {
   about: {
     eyebrow: "About",
     body: [
-      "창업을 두 번 했고, 두 번 다 만족스럽지 못하게 끝났습니다.",
+      "창업을 경험해 봤고, 또 운영해봤습니다.",
       "그 과정에서 배운 건 사업 메커니즘이 아니라, 내가 어떤 결의 브랜드를 만들고 싶은지에 대한 명확한 그림이었습니다.",
       "지금은 그 그림을 현실로 만들기 위한 다음 단계를 준비하고 있습니다.",
     ],
@@ -327,7 +327,7 @@ const en: Dict = {
   about: {
     eyebrow: "About",
     body: [
-      "I founded two startups. Both ended in ways I wasn't satisfied with.",
+      "I've experienced founding a startup, and I've run operations too.",
       "What I took from them wasn't the mechanics of business — it was a clearer picture of what kind of brand I want to build.",
       "I'm now preparing the next step toward making that picture real.",
     ],

@@ -51,7 +51,7 @@ export type Dict = {
   experience: {
     eyebrow: string;
     period: string;
-    intro: string;
+    intro?: string;
     items: {
       period: string;
       ongoing?: boolean;
@@ -213,8 +213,6 @@ const ko: Dict = {
   experience: {
     eyebrow: "Experience",
     period: "2024 — 2026",
-    intro:
-      "창업과 빌딩만 한 건 아니다. 동아리와 소학회에서 사람을 모으고, 가르치고, 운영했다.",
     items: [
       {
         period: "2026.03 — Present",
@@ -285,23 +283,23 @@ const ko: Dict = {
         slug: "syna",
         index: "01",
         name: "Syna",
-        tagline: "제품 변경 인텔리전스 · Living Spec → 피벗 · 종료",
+        tagline: "B2B SaaS — 포지셔닝·피치·피벗, 그리고 ‘누구에게 어떤 말로’를 다시 쓴 16개월",
         period: "2024.11 — 2026.04",
         role: "Founder & CEO",
-        meta: "B2B SaaS · 4인 팀 · 검증 스프린트 · 종료",
+        meta: "Brand narrative · Pitch · 4인 팀",
         takeaway:
-          "시장이 원하는 걸 검증하지 않은 채로 만들면 어떻게 되는지를 4인 팀과 16개월에 걸쳐 배웠습니다. 마케팅의 출발이 결국 ‘누구의 어떤 needs에 답하는가’라는 걸 가장 비싼 수업료로.",
+          "피벗할 때마다 ‘이 제품은 누구에게, 어떤 결의 말을 하는가’를 처음부터 다시 썼습니다. 사업계획서·피치덱·모두의창업·두어스 어플라이 — 브랜드 마케팅과 같이, 결을 정하고 그 결이 실제로 닿는지 검증하는 일이었습니다.",
       },
       {
         slug: "on-eum",
         index: "02",
         name: "온이음",
-        tagline: "요양병원을 위한 헬스케어 AI 챗봇 — 대학병원 PoC 최종 검토까지",
+        tagline: "헬스케어 AI — 보수적 B2B에서 결을 그들의 언어로 전달, PoC 최종 검토까지",
         period: "2024 — Present",
         role: "Founder",
-        meta: "Healthcare AI · PoC Discussion",
+        meta: "B2B storytelling · PoC Discussion",
         takeaway:
-          "보수적 도메인의 의사결정권자에게 가치를 그들의 언어로 번역하는 일. 패션 브랜드의 B2B 영역 — 편집샵, 백화점, 글로벌 바이어 — 와 크게 다르지 않다고 생각합니다.",
+          "요양병원 팀장 앞에서는 기능 목록이 아니라 ‘이 병원이 왜 이 말을 해야 하는가’로 설득했습니다. 미팅마다 제안서·데크를 다시 쓰며 메시지를 다듬었고, 패션 브랜드가 편집샵·백화점·글로벌 바이어에게 결을 전달하는 B2B 브랜드 마케팅과 같은 구조라고 느꼈습니다.",
       },
       {
         slug: "kmong",
@@ -455,8 +453,6 @@ const en: Dict = {
   experience: {
     eyebrow: "Experience",
     period: "2024 — 2026",
-    intro:
-      "It wasn't only founding and building. I gathered, taught, and ran clubs and study societies on campus.",
     items: [
       {
         period: "2026.03 — Present",
@@ -527,23 +523,23 @@ const en: Dict = {
         slug: "syna",
         index: "01",
         name: "Syna",
-        tagline: "A product-change intelligence SaaS, and how it ended",
+        tagline: "B2B SaaS — positioning, pitch, pivot, and rewriting ‘who it's for, in what voice’ for 16 months",
         period: "Nov 2024 — Apr 2026",
         role: "Founder & CEO",
-        meta: "B2B SaaS · team of 4 · pivot · sunset",
+        meta: "Brand narrative · Pitch · team of 4",
         takeaway:
-          "Sixteen months with a team of four taught me what happens when you build before validating demand. Marketing starts from one question — ‘whose needs are you answering, and to what’ — and I learned it the most expensive way.",
+          "Every pivot meant rewriting from scratch: who this product speaks to, and in what texture. Business plans, pitch decks, MoDuEui-changup and Doors applications — the same work as brand marketing: define the texture, then test whether it actually lands.",
       },
       {
         slug: "on-eum",
         index: "02",
         name: "On-eum",
-        tagline: "Healthcare AI for nursing hospitals — into final PoC review with a university hospital",
+        tagline: "Healthcare AI — carrying texture in a conservative B2B room, into final PoC review",
         period: "2024 — Present",
         role: "Founder",
-        meta: "Healthcare AI · PoC Discussion",
+        meta: "B2B storytelling · PoC Discussion",
         takeaway:
-          "Translating value into a decision-maker's language inside a conservative domain. Not so different, I think, from a fashion brand's B2B side — concept stores, department buyers, global accounts.",
+          "Across from hospital department heads, persuasion wasn't a feature list — it was ‘why this institution should speak in this voice.’ I rewrote proposals and decks after every meeting. The same structure, I think, as a fashion brand reaching concept stores, department buyers, and global accounts.",
       },
       {
         slug: "kmong",

@@ -16,12 +16,14 @@ export default function Experience() {
             <p className="meta tabular-nums text-metal">{t.experience.period}</p>
           </div>
           <div className="divider-flawed" />
-          <p
-            className="text-body text-ink2 max-w-prose mt-2"
-            style={{ lineHeight: 1.9, whiteSpace: "pre-line" }}
-          >
-            {t.experience.intro}
-          </p>
+          {t.experience.intro && (
+            <p
+              className="text-body text-ink2 max-w-prose mt-2"
+              style={{ lineHeight: 1.9, whiteSpace: "pre-line" }}
+            >
+              {t.experience.intro}
+            </p>
+          )}
         </FadeUp>
 
         <div className="md:max-w-[60%]">

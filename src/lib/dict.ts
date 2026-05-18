@@ -47,13 +47,6 @@ export type Dict = {
     outro: string;
   };
 
-  // On Brand Marketing — essay
-  onBrandMarketing: {
-    eyebrow: string;
-    paragraphs: string[];
-    date: string;
-  };
-
   // Experience timeline
   experience: {
     eyebrow: string;
@@ -177,7 +170,7 @@ const ko: Dict = {
         kicker: "결을 글로 쓸 수 있는 사람",
         headline: "매니페스토를 쓰는 일.",
         body:
-          "브랜드 마케팅의 출발은 결국 ‘이 브랜드는 어떤 결의 말을 하는가’ 입니다. 저는 글로 결을 정의하는 일에 익숙합니다.",
+          "브랜드 마케팅은 이 브랜드가 어떤 것을 추구하는가가 중요하다고 생각합니다. 글로 가이드를 만드는 데에는 자신 있습니다.",
         bullets: [
           "본인 브랜드 iove. 매니페스토 작성",
           "이 사이트의 모든 카피 직접 작성",
@@ -189,7 +182,7 @@ const ko: Dict = {
         kicker: "결을 현실로 만드는 사람",
         headline: "글에서 멈추지 않는 일.",
         body:
-          "매니페스토만 쓰고 끝내는 사람이 아닙니다. 그 결을 작동하는 사이트로, 실행 가능한 캠페인으로 옮길 수 있습니다. 직접.",
+          "생각에서만 멈추는 사람이 아닙니다. 생각을 직접 행동으로 옮길 수 있는 능력이 있습니다.",
         bullets: [
           "Next.js / TypeScript 풀스택 (이 사이트도 직접 빌드)",
           "Cursor + Claude Code 기반 AI-assisted 빌딩",
@@ -212,17 +205,6 @@ const ko: Dict = {
     ],
     outro:
       "AI 와 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
-  },
-  onBrandMarketing: {
-    eyebrow: "On brand marketing",
-    paragraphs: [
-      "브랜드 마케팅은 결국 두 가지 일을 동시에 하는 직무라고 생각합니다.",
-      "하나는 브랜드의 결을 매번 다시 정의하는 일. 매 시즌, 매 캠페인, 매 콘텐츠에서 같은 결을 다른 모습으로 변주하는 일.",
-      "다른 하나는 그 결을 사람들에게 닿게 하는 일. 결을 잃지 않으면서도 사람들이 발견하고, 입어보고, 사랑하게 만드는 일.",
-      "이 두 가지가 자주 충돌합니다. 결을 지키려면 닿기 어렵고, 닿으려면 결이 흐려집니다. 그 사이에서 매번 새로운 균형을 찾는 일이 브랜드 마케팅이라고 생각합니다.",
-      "저는 글로 결을 쓰는 일과 코드로 결을 작동시키는 일을 동시에 할 수 있고, 그 사이의 균형을 찾는 일에 흥미를 느낍니다.",
-    ],
-    date: "— 2026.05",
   },
   experience: {
     eyebrow: "Experience",
@@ -424,7 +406,7 @@ const en: Dict = {
         kicker: "Someone who can write the texture",
         headline: "Writing the manifesto.",
         body:
-          "Brand marketing starts from ‘what kind of voice does this brand speak in’. I'm used to defining that texture in writing.",
+          "I think brand marketing comes down to what a brand pursues. I'm confident in turning that into written guides.",
         bullets: [
           "Wrote the manifesto for my own brand iove.",
           "Wrote every line of copy on this site",
@@ -436,7 +418,7 @@ const en: Dict = {
         kicker: "Someone who can make the texture real",
         headline: "Not stopping at the page.",
         body:
-          "I'm not the kind of person who writes a manifesto and walks away. I can move that texture into a working site, a runnable campaign. Hands on.",
+          "I'm not someone who stops at thinking. I can move thought into action myself.",
         bullets: [
           "Next.js / TypeScript full-stack (this site, shipped solo)",
           "AI-assisted building with Cursor + Claude Code",
@@ -459,17 +441,6 @@ const en: Dict = {
     ],
     outro:
       "As close to AI as one can be — now a 24-year-old drawn to the inefficiency and creativity only humans hold, and to fashion, where they gather.",
-  },
-  onBrandMarketing: {
-    eyebrow: "On brand marketing",
-    paragraphs: [
-      "I think brand marketing is, in the end, two jobs done at once.",
-      "One is redefining the texture of the brand every time. Every season, every campaign, every piece of content — the same texture worn in a different shape.",
-      "The other is carrying that texture to people. Letting them discover it, try it on, love it — without losing the texture along the way.",
-      "These two often pull against each other. Keep the texture and it's hard to reach. Reach and the texture goes blurry. I think brand marketing is finding a new balance between them, again and again.",
-      "I can write that texture in words, and make it run in code. Finding the balance between the two is the kind of work I'm most drawn to.",
-    ],
-    date: "— 2026.05",
   },
   experience: {
     eyebrow: "Experience",

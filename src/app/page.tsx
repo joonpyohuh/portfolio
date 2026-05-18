@@ -1,7 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import WhyMe from "@/components/sections/WhyMe";
-import OnBrandMarketing from "@/components/sections/OnBrandMarketing";
 import Experience from "@/components/sections/Experience";
 import Certifications from "@/components/sections/Certifications";
 import Work from "@/components/sections/Work";
@@ -15,7 +14,6 @@ export default function HomePage() {
       <Hero />
       <About />
       <WhyMe />
-      <OnBrandMarketing />
       <Experience />
       <Certifications />
       <Work />

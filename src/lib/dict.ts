@@ -11,33 +11,40 @@ export type Dict = {
     contact: string;
   };
 
-  // Hero
+  // Hero — statement of intent
   hero: {
-    eyebrow: string;
-    name: string;            // "Junpyo Heo"
-    nameKo: string;          // "허준표"
-    role: string;            // tagline under the name
-    intro: string;           // short hero intro paragraph
+    metaName: string;     // "JUNPYO HEO — 2026"
+    headline: string[];   // multi-line statement
+    sub: string[];        // sub-statement lines
+    scroll: string;
   };
 
-  // About
+  // About — "Why I'm here"
   about: {
     eyebrow: string;
     body: string[];          // paragraphs
-    meta: { label: string; value: string }[];
+    signature: string[];     // two short signature lines
   };
 
-  // Why Me
+  // Why Me — 3 cards (kicker + headline + body + bullets + link)
   whyMe: {
     eyebrow: string;
     title: string;
     cards: {
-      tag: string;
-      title: string;
+      kicker: string;
+      headline: string;
       body: string;
-      meta: string;
+      bullets: string[];
+      link: { href: string; label: string };
     }[];
     outro: string;
+  };
+
+  // On Brand Marketing — essay
+  onBrandMarketing: {
+    eyebrow: string;
+    paragraphs: string[];
+    date: string;
   };
 
   // Experience timeline
@@ -81,8 +88,10 @@ export type Dict = {
       period: string;
       role?: string;
       meta: string;
+      takeaway?: string;
     }[];
     cta: string;
+    takeawayLabel: string;
   };
 
   // Contact
@@ -122,27 +131,28 @@ const ko: Dict = {
     contact: "Contact",
   },
   hero: {
-    eyebrow: "Portfolio 2026 / Draft 01",
-    name: "Junpyo Heo",
-    nameKo: "허준표",
-    role: "Brand · Marketing · Builder",
-    intro:
-      "브랜드의 메시지가 어디서, 누구에게, 어떻게 닿는지를 설계하는 일에 가장 가까이 있고 싶습니다. 창업·운영·빌딩의 모든 결정이 결국 한 줄의 카피로 모인다는 걸 경험으로 배웠습니다.",
+    metaName: "JUNPYO HEO — 2026",
+    headline: [
+      "브랜드의 결을 쓰는 일,",
+      "그 결을 사람들에게 닿게 하는 일.",
+      "",
+      "이 둘이 같은 일이라고 믿는 사람.",
+    ],
+    sub: [
+      "브랜드 마케팅을 지망합니다.",
+      "글과 코드를 같이 다루고, 두 번의 창업에서 사업이 어떻게 만들어지는지 봤습니다.",
+    ],
+    scroll: "스크롤",
   },
   about: {
-    eyebrow: "About",
+    eyebrow: "Why I'm here",
     body: [
-      "창업과 운영을 경험했고, 그 과정에서 가장 많이 한 일은 의사결정권자 앞에서 가치를 한 줄로 정리해 전달하는 일이었습니다.",
-      "지금은 그 훈련을 브랜드와 마케팅 — 메시지를 어디서, 누구에게, 어떻게 닿게 할지 설계하는 일 안에서 풀고 싶습니다.",
-      "한국 패션 브랜드의 글로벌 성장 케이스에 깊이 관심이 있으며, 인하우스 마케팅 인턴 자리를 찾고 있습니다.",
+      "패션을 전공하지 않았습니다. 비즈니스 인텔리전스를 전공하고, 두 번의 창업을 했고, 그 안에서 사업이 종이 위가 아니라 사람과 사람 사이에서 만들어진다는 걸 배웠습니다.",
+      "지금은 한국 디자이너 브랜드들이 만들어내는 결을 가장 가까이서 보고 싶습니다. 어떻게 컬렉션이 결을 가지고, 그 결이 어떻게 사람들에게 닿는지. 브랜드 마케팅이 그 과정의 가장 가운데 있다고 생각합니다.",
     ],
-    meta: [
-      { label: "Age / Sex", value: "24 / Male" },
-      { label: "Based in",  value: "Seoul, South Korea" },
-      { label: "Studying",  value: "Business Intelligence, Ajou Univ. (3rd grade)" },
-      { label: "Certifications", value: "OPIC IH · ITQ 한글 파워포인트 B" },
-      { label: "Looking for", value: "패션 브랜드 인하우스 마케팅 인턴" },
-      { label: "Currently",   value: "IOVE 브랜드 prototype · 본 포트폴리오 사이트" },
+    signature: [
+      "— 24 / Junior at Ajou Univ",
+      "— Building: this site, and the manifesto behind it",
     ],
   },
   whyMe: {
@@ -150,29 +160,55 @@ const ko: Dict = {
     title: "세 가지 결",
     cards: [
       {
-        tag: "01 — Founder · Communicator",
-        title: "‘가치를 한 줄로 전달하는 일’을 두 번 했다",
+        kicker: "결을 글로 쓸 수 있는 사람",
+        headline: "매니페스토를 쓰는 일.",
         body:
-          "Syna (B2B SaaS, 제품 변경 인텔리전스) — 4인 팀 빌딩, 피벗 의사결정, 사업계획서·피치덱, 모두의창업·두어스 어플라이.\n\n온이음 (헬스케어 AI, 요양병원) — 프로토타입에서 멈추지 않고 아주대학교요양병원 팀장급과 직접 미팅, PoC 최종 검토 단계까지 진입.\n\n결국 두 번 다 ‘메시지를 한 줄로 정리해 의사결정권자에게 닿게 하는 일’이었다. 마케팅의 출발선이라고 생각한다.",
-        meta: "2024 — 2026",
+          "브랜드 마케팅의 출발은 결국 ‘이 브랜드는 어떤 결의 말을 하는가’ 입니다. 저는 글로 결을 정의하는 일에 익숙합니다.",
+        bullets: [
+          "본인 브랜드 iove. 매니페스토 작성",
+          "이 사이트의 모든 카피 직접 작성",
+          "B-CUBE 소학회의 톤 가이드 담당",
+        ],
+        link: { href: "/manifesto", label: "Read manifesto →" },
       },
       {
-        tag: "02 — Builder for marketing",
-        title: "마케터가 필요로 하는 페이지를 직접 만든다",
+        kicker: "결을 현실로 만드는 사람",
+        headline: "글에서 멈추지 않는 일.",
         body:
-          "Next.js / TypeScript / OpenAI API 풀스택. 브랜드 랜딩, 캠페인 페이지, 발표 덱, 시리얼 시스템 — 마케팅 자산을 직접 빌드합니다. 크몽 공식 입점(웹사이트 제작 서비스 심사 통과). 마케터의 머릿속에 있는 것을 실제 페이지로 옮기는 일에 강합니다.",
-        meta: "2023 — 현재",
+          "매니페스토만 쓰고 끝내는 사람이 아닙니다. 그 결을 작동하는 사이트로, 실행 가능한 캠페인으로 옮길 수 있습니다. 직접.",
+        bullets: [
+          "Next.js / TypeScript 풀스택 (이 사이트도 직접 빌드)",
+          "Cursor + Claude Code 기반 AI-assisted 빌딩",
+          "B-CUBE에서 후배들에게 직접 가르치는 중",
+        ],
+        link: { href: "/#work", label: "See projects →" },
       },
       {
-        tag: "03 — Brand thinker",
-        title: "결을 글로, 그리고 시각으로 잡는 사람",
+        kicker: "사람과 부딪혀본 사람",
+        headline: "어른과 거래해본 24살.",
         body:
-          "의도된 결핍의 미학을 다룬 브랜드 IOVE를 구상 — 카피·시각·시리얼 시스템까지 결을 일관되게 잡는 작업. 아더에러, 앤더슨벨, 르메르의 톤을 좋아하고, 한국 패션의 글로벌 마케팅 케이스에 깊이 관심 있습니다. 자세한 brand thinking은 매니페스토와 IOVE 페이지에.",
-        meta: "Ongoing",
+          "대부분의 학생은 캠페인 리서치는 해봤어도 의사결정권자 앞에 서본 적이 없습니다. 저는 두 번의 창업에서 그 자리에 있었습니다.",
+        bullets: [
+          "아주대학교요양병원 총무팀·기획팀 팀장 미팅 / PoC 최종 검토 진입",
+          "지역 상권 살리기 프로젝트에서 상인회장 직접 미팅",
+          "Syna 4인 팀 운영 및 두어스 어플라이",
+        ],
+        link: { href: "/#experience", label: "See experience →" },
       },
     ],
     outro:
       "AI 와 가장 가까운 곳에 있다가, 이제는 인간만의 비효율과 창의성, 그 집합소인 패션에 관심을 가지게 된 24살 청년입니다.",
+  },
+  onBrandMarketing: {
+    eyebrow: "On brand marketing",
+    paragraphs: [
+      "브랜드 마케팅은 결국 두 가지 일을 동시에 하는 직무라고 생각합니다.",
+      "하나는 브랜드의 결을 매번 다시 정의하는 일. 매 시즌, 매 캠페인, 매 콘텐츠에서 같은 결을 다른 모습으로 변주하는 일.",
+      "다른 하나는 그 결을 사람들에게 닿게 하는 일. 결을 잃지 않으면서도 사람들이 발견하고, 입어보고, 사랑하게 만드는 일.",
+      "이 두 가지가 자주 충돌합니다. 결을 지키려면 닿기 어렵고, 닿으려면 결이 흐려집니다. 그 사이에서 매번 새로운 균형을 찾는 일이 브랜드 마케팅이라고 생각합니다.",
+      "저는 글로 결을 쓰는 일과 코드로 결을 작동시키는 일을 동시에 할 수 있고, 그 사이의 균형을 찾는 일에 흥미를 느낍니다.",
+    ],
+    date: "— 2026.05",
   },
   experience: {
     eyebrow: "Experience",
@@ -253,6 +289,8 @@ const ko: Dict = {
         period: "2024.11 — 2026.04",
         role: "Founder & CEO",
         meta: "B2B SaaS · 4인 팀 · 검증 스프린트 · 종료",
+        takeaway:
+          "시장이 원하는 걸 검증하지 않은 채로 만들면 어떻게 되는지를 4인 팀과 16개월에 걸쳐 배웠습니다. 마케팅의 출발이 결국 ‘누구의 어떤 needs에 답하는가’라는 걸 가장 비싼 수업료로.",
       },
       {
         slug: "on-eum",
@@ -262,6 +300,8 @@ const ko: Dict = {
         period: "2024 — Present",
         role: "Founder",
         meta: "Healthcare AI · PoC Discussion",
+        takeaway:
+          "보수적 도메인의 의사결정권자에게 가치를 그들의 언어로 번역하는 일. 패션 브랜드의 B2B 영역 — 편집샵, 백화점, 글로벌 바이어 — 와 크게 다르지 않다고 생각합니다.",
       },
       {
         slug: "kmong",
@@ -270,6 +310,8 @@ const ko: Dict = {
         tagline: "공식 입점 + likerain 예시 페이지",
         period: "2025",
         meta: "Service · kmong-5qwd.vercel.app",
+        takeaway:
+          "서비스를 패키징하고 가격을 정하고 타겟에게 제안하는 일련의 사이클을 직접 굴려본 경험.",
       },
       {
         index: "04",
@@ -277,15 +319,28 @@ const ko: Dict = {
         tagline: "이 사이트 자체가 작품이다",
         period: "2026.05",
         meta: "IOVE · iove.vercel.app",
+        takeaway:
+          "매니페스토에 적은 톤을 실제로 작동하는 페이지로 옮기는 일이 얼마나 디테일한 작업인지. 톤은 폰트 굵기와 여백 사이에 산다는 걸.",
+      },
+      {
+        href: "/project/future-brand",
+        index: "05",
+        name: "iove.",
+        tagline: "Atelier of Cold Light — 가상이지만 진지한 브랜드 프로토타입",
+        period: "2026",
+        meta: "Brand prototype · iove.vercel.app",
+        takeaway:
+          "가상이지만 진지한 브랜드 프로토타입을 만드는 일이 브랜드 마케팅의 가장 좋은 훈련이라고 생각합니다.",
       },
     ],
     cta: "자세히 보기",
+    takeawayLabel: "What I took from this",
   },
   contact: {
-    eyebrow: "Contact",
-    title: "Want to talk?",
+    eyebrow: "Let's talk",
+    title: "LET'S TALK",
     intro:
-      "패션 브랜드 인하우스 마케팅 인턴, 브랜드 협업, 혹은 결이 맞는 사람과의 대화. 무엇이든 환영입니다.",
+      "브랜드 마케팅 자리, 인턴/주니어 자리에 관심 많습니다. 간단한 미팅이든 이메일이든 환영합니다.",
     items: [
       { label: "Email",     value: "soojeen20000@gmail.com",                       href: "mailto:soojeen20000@gmail.com" },
       { label: "Instagram", value: "@treelife0405",                                  href: "https://instagram.com/treelife0405" },
@@ -318,27 +373,28 @@ const en: Dict = {
     contact: "Contact",
   },
   hero: {
-    eyebrow: "Portfolio 2026 / Draft 01",
-    name: "Junpyo Heo",
-    nameKo: "허준표",
-    role: "Brand · Marketing · Builder",
-    intro:
-      "I want to be closest to brand and marketing — designing where, to whom, and how a message lands. Founding, running, and the pages I built solo all converge into one line of copy.",
+    metaName: "JUNPYO HEO — 2026",
+    headline: [
+      "Writing the texture of a brand,",
+      "and carrying that texture to people.",
+      "",
+      "I believe these are the same work.",
+    ],
+    sub: [
+      "Aiming for brand marketing.",
+      "I work in both words and code, and I've seen — through two startups — how a business actually gets built.",
+    ],
+    scroll: "Scroll",
   },
   about: {
-    eyebrow: "About",
+    eyebrow: "Why I'm here",
     body: [
-      "I founded and ran startups, where the most repeated work was compressing value into one line — for hospital directors, merchants' presidents, faculty judges.",
-      "I want to take that training into brand and marketing — designing where, to whom, and how a message with texture lands.",
-      "I'm focused on Korean fashion brands going global, and I'm looking for an in-house marketing internship.",
+      "I didn't major in fashion. I study Business Intelligence, founded two startups, and learned along the way that a business is built between people, not on paper.",
+      "Now I want to be closest to the texture that Korean designer brands carry. How a collection holds a texture, and how that texture reaches people. I think brand marketing sits at the center of that.",
     ],
-    meta: [
-      { label: "Age / Sex", value: "24 / Male" },
-      { label: "Based in",  value: "Seoul, South Korea" },
-      { label: "Studying",  value: "Business Intelligence, Ajou Univ. (Junior)" },
-      { label: "Certifications", value: "OPIC IH · ITQ PowerPoint B" },
-      { label: "Looking for",    value: "In-house marketing intern at a fashion brand" },
-      { label: "Currently",      value: "IOVE brand prototype · this portfolio site" },
+    signature: [
+      "— 24 / Junior at Ajou Univ",
+      "— Building: this site, and the manifesto behind it",
     ],
   },
   whyMe: {
@@ -346,29 +402,55 @@ const en: Dict = {
     title: "Three textures",
     cards: [
       {
-        tag: "01 — Founder · Communicator",
-        title: "I did the ‘deliver value in one line’ work — twice",
+        kicker: "Someone who can write the texture",
+        headline: "Writing the manifesto.",
         body:
-          "Syna (B2B SaaS, product-change intelligence) — built a team of four, drove the pivot, wrote the deck, applied to MoDuEui-changup and Doors.\n\nOn-eum (healthcare AI for nursing hospitals) — went past the prototype, met department heads at Ajou University Hospital, reached the final stage of internal PoC review.\n\nIn the end, both projects were the same kind of work: compressing value into one line that reaches a decision-maker. I think of that as the starting line of marketing.",
-        meta: "2024 — 2026",
+          "Brand marketing starts from ‘what kind of voice does this brand speak in’. I'm used to defining that texture in writing.",
+        bullets: [
+          "Wrote the manifesto for my own brand iove.",
+          "Wrote every line of copy on this site",
+          "Lead the tone guide of the B-CUBE society",
+        ],
+        link: { href: "/manifesto", label: "Read manifesto →" },
       },
       {
-        tag: "02 — Builder for marketing",
-        title: "Pages marketers actually need — built by me",
+        kicker: "Someone who can make the texture real",
+        headline: "Not stopping at the page.",
         body:
-          "Next.js / TypeScript / OpenAI API full-stack. Brand landings, campaign pages, decks, serial systems — marketing assets shipped solo. Officially listed on Kmong as a website-building service. I'm strong at moving what's in a marketer's head into a real page.",
-        meta: "2023 — present",
+          "I'm not the kind of person who writes a manifesto and walks away. I can move that texture into a working site, a runnable campaign. Hands on.",
+        bullets: [
+          "Next.js / TypeScript full-stack (this site, shipped solo)",
+          "AI-assisted building with Cursor + Claude Code",
+          "Teaching juniors directly at B-CUBE right now",
+        ],
+        link: { href: "/#work", label: "See projects →" },
       },
       {
-        tag: "03 — Brand thinker",
-        title: "Holding texture together in copy and image",
+        kicker: "Someone who has actually sat across from people",
+        headline: "A 24-year-old who has negotiated with adults.",
         body:
-          "Designing IOVE — a brand around intended imperfection, where copy, visuals, and the serial system carry one texture together. Drawn to ader error, Andersson Bell, and Lemaire — and to Korean fashion's global marketing case studies. The deeper thinking lives in the manifesto and the IOVE page.",
-        meta: "Ongoing",
+          "Most students have done campaign research, but few have sat across from a real decision-maker. Through two startups, I have.",
+        bullets: [
+          "Meetings with Ajou Univ. Hospital General Affairs / Strategy heads — into final PoC review",
+          "Met the merchants' association president for a local-economy project",
+          "Ran Syna's team of four and applied to Doors",
+        ],
+        link: { href: "/#experience", label: "See experience →" },
       },
     ],
     outro:
       "As close to AI as one can be — now a 24-year-old drawn to the inefficiency and creativity only humans hold, and to fashion, where they gather.",
+  },
+  onBrandMarketing: {
+    eyebrow: "On brand marketing",
+    paragraphs: [
+      "I think brand marketing is, in the end, two jobs done at once.",
+      "One is redefining the texture of the brand every time. Every season, every campaign, every piece of content — the same texture worn in a different shape.",
+      "The other is carrying that texture to people. Letting them discover it, try it on, love it — without losing the texture along the way.",
+      "These two often pull against each other. Keep the texture and it's hard to reach. Reach and the texture goes blurry. I think brand marketing is finding a new balance between them, again and again.",
+      "I can write that texture in words, and make it run in code. Finding the balance between the two is the kind of work I'm most drawn to.",
+    ],
+    date: "— 2026.05",
   },
   experience: {
     eyebrow: "Experience",
@@ -449,6 +531,8 @@ const en: Dict = {
         period: "Nov 2024 — Apr 2026",
         role: "Founder & CEO",
         meta: "B2B SaaS · team of 4 · pivot · sunset",
+        takeaway:
+          "Sixteen months with a team of four taught me what happens when you build before validating demand. Marketing starts from one question — ‘whose needs are you answering, and to what’ — and I learned it the most expensive way.",
       },
       {
         slug: "on-eum",
@@ -458,6 +542,8 @@ const en: Dict = {
         period: "2024 — Present",
         role: "Founder",
         meta: "Healthcare AI · PoC Discussion",
+        takeaway:
+          "Translating value into a decision-maker's language inside a conservative domain. Not so different, I think, from a fashion brand's B2B side — concept stores, department buyers, global accounts.",
       },
       {
         slug: "kmong",
@@ -466,6 +552,8 @@ const en: Dict = {
         tagline: "Official listing + likerain example site",
         period: "2025",
         meta: "Service · kmong-5qwd.vercel.app",
+        takeaway:
+          "Packaging a service, pricing it, pitching it to the right audience — running that full cycle, by myself.",
       },
       {
         index: "04",
@@ -473,15 +561,28 @@ const en: Dict = {
         tagline: "The site itself is the work",
         period: "May 2026",
         meta: "IOVE · iove.vercel.app",
+        takeaway:
+          "How detailed it is to move the tone written in a manifesto into a working page. Tone lives in the gap between font weight and whitespace.",
+      },
+      {
+        href: "/project/future-brand",
+        index: "05",
+        name: "iove.",
+        tagline: "Atelier of Cold Light — a serious prototype of a fictional brand",
+        period: "2026",
+        meta: "Brand prototype · iove.vercel.app",
+        takeaway:
+          "Building a serious prototype for a fictional brand is, I think, the best training there is for brand marketing.",
       },
     ],
     cta: "Read more",
+    takeawayLabel: "What I took from this",
   },
   contact: {
-    eyebrow: "Contact",
-    title: "Want to talk?",
+    eyebrow: "Let's talk",
+    title: "LET'S TALK",
     intro:
-      "About an in-house marketing internship at a fashion brand, a brand collaboration, or simply finding the same texture in conversation. Anything is welcome.",
+      "Open to brand marketing roles — intern or junior. A short meeting or an email, both welcome.",
     items: [
       { label: "Email",     value: "soojeen20000@gmail.com",                       href: "mailto:soojeen20000@gmail.com" },
       { label: "Instagram", value: "@treelife0405",                                  href: "https://instagram.com/treelife0405" },

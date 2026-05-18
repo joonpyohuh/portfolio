@@ -11,24 +11,26 @@ export default function About() {
     <section id="about" className="section border-t border-line">
       <div className="container-page">
         <SectionHeader eyebrow={t.about.eyebrow} index="01" />
-        <div className="container-prose-wide grid gap-16 md:grid-cols-[1fr_240px] md:gap-20">
-          <div className="space-y-6 max-w-prose">
-            {t.about.body.map((p, i) => (
-              <FadeUp key={p} delay={i * 0.1}>
-                <p className="text-body text-ink/90">{p}</p>
-              </FadeUp>
-            ))}
-          </div>
-          <aside className="space-y-8">
-            {t.about.meta.map((row, i) => (
-              <FadeUp key={row.label} delay={0.15 + i * 0.08}>
-                <div>
-                  <p className="meta mb-2">{row.label}</p>
-                  <p className="text-body text-ink">{row.value}</p>
-                </div>
-              </FadeUp>
-            ))}
-          </aside>
+        <div className="container-prose-wide max-w-prose space-y-8">
+          {t.about.body.map((p, i) => (
+            <FadeUp key={p} delay={i * 0.1}>
+              <p
+                className="text-body text-ink/90"
+                style={{ lineHeight: 1.9 }}
+              >
+                {p}
+              </p>
+            </FadeUp>
+          ))}
+        </div>
+        <div className="container-prose-wide max-w-prose mt-16 md:mt-20 space-y-2">
+          {t.about.signature.map((line, i) => (
+            <FadeUp key={line} delay={0.2 + i * 0.08}>
+              <p className="text-body text-ink2 normal-case tracking-normal">
+                {line}
+              </p>
+            </FadeUp>
+          ))}
         </div>
       </div>
     </section>

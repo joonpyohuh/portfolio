@@ -133,10 +133,10 @@ const ko: Dict = {
   hero: {
     metaName: "JUNPYO HEO — 2026",
     headline: [
-      "브랜드의 결을 쓰는 일,",
-      "그 결을 사람들에게 닿게 하는 일.",
+      "브랜드의 가치를 중요하게 생각하고,",
+      "또 그 브랜드의 가치를 계속 이끌어가는 것에 관심이 많은 사람,",
       "",
-      "이 둘이 같은 일이라고 믿는 사람.",
+      "브랜드의 아름다움을 사람들에게 전해주고 싶어하는 사람.",
     ],
     sub: [
       "브랜드 마케팅을 지망합니다.",
@@ -369,10 +369,10 @@ const en: Dict = {
   hero: {
     metaName: "JUNPYO HEO — 2026",
     headline: [
-      "Writing the texture of a brand,",
-      "and carrying that texture to people.",
+      "I care deeply about a brand's values,",
+      "and about continually leading those values forward.",
       "",
-      "I believe these are the same work.",
+      "Someone who wants to carry a brand's beauty to people.",
     ],
     sub: [
       "Aiming for brand marketing.",
